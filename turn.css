@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.photo img {
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.data {
+    display: flex;
+    gap: 50px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.data p {
+    cursor: pointer;
+    transition: 0.3s;
+}
+.data p:hover {
+    color: #ff3c00;
+}
+
+.icon {
+    display: flex;
+    gap: 25px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Main Section */
+.main {
+    display: flex;
+    padding: 60px;
+    gap: 40px;
+    align-items: center;
+    background: linear-gradient(to right, #f8f8f8, #eaeaea);
+}
+
+.side {
+    flex: 1;
+    font-size: 28px;
+}
+
+.side h1 {
+    font-size: 60px;
+    margin: 20px 0;
+    color: #111;
+}
+.side .tagline {
+    color: #ff3c00;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.side .desc {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+/* Button */
+.s button {
+    margin-top: 20px;
+    background-color: #111;
+    color: white;
+    border-radius: 40px;
+    height: 55px;
+    width: 220px;
+    font-size: 18px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.s button:hover {
+    background: transparent;
+    border: 2px solid #111;
+    color: #111;
+}
+
+/* Product Cards */
+.card {
+    flex: 1;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 20px;
+}
+.card::-webkit-scrollbar {
+    display: none;
+}
+
+.shoes {
+    display: inline-block;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.shoes:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.shoes img {
+    width: 220px;
+    margin-bottom: 15px;
+}
+.shoes h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #111;
+}
+.shoes p {
+    font-size: 14px;
+    color: #555;
+}
+.shoes .price {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ff3c00;
+}
